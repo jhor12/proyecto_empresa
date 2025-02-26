@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Crear Cuenta - JhorStep{% endblock %}
+
+{% block content %}
+
+<div class="text-center mb-4">
+    <a href="{{ url_for('inicio') }}">
+        <img src="{{ url_for('static', filename='img/logo1.webp') }}" alt="Logo" width="64" height="64">
+    </a>
+</div>
+
+<form id="registerForm" method="POST" class="p-4 border rounded bg-white mx-auto" style="max-width: 400px;">
+    <div class="mb-3">
+        <label for="name" class="form-label">Nombre Completo</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Ingresa tu nombre completo" required>
+    </div>
+    <div class="mb-3">
+        <label for="username" class="form-label">Nombre de Usuario</label>
+        <input type="text" class="form-control" id="username" name="username" placeholder="Elige un nombre de usuario" required>
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Correo Electrónico</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Elige una contraseña" required>
+    </div>
+    <button type="submit" class="btn btn-warning w-100">Registrar</button>
+</form>
+
+<div class="text-center mt-3">
+    <p class="text-dark">¿Ya tienes cuenta? <a href="{{ url_for('login') }}" class="text-warning">Inicia sesión aquí</a></p>
+    <p class="text-dark">Olvide mi contraseña <a href="{{ url_for('recuperacion') }}" class="text-warning">Recuperar aqui</a></p>
+</div>
+
+{% endblock %}

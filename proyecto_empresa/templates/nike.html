@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block title %}Nike - JhorStep{% endblock %}
+
+{% block content %}
+    <h1 class="text-center text-dark">Bienvenido a JhorStep</h1>
+    <p class="text-center">Explora nuestros productos marca Nike.</p>
+
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4" id="product-container">
+            <!-- Producto 1 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="{{ url_for('static', filename='img/nike1.jpg') }}" class="card-img-top img-fluid" alt="" style="height: 200px; object-fit: cover;">
+                    <div class="card-body"  style="background: #ffe600b7;">
+                        <span class="badge bg-danger">-65%</span>
+                        <h5 class="card-title">adidas, Ultraboost Light Hombre</h5>
+                        <p class="card-text">COP 84.000</p>
+                        <button class="btn btn-primary btn-sm add-to-cart">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 2 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="{{ url_for('static', filename='img/nike3.jpg') }}" class="card-img-top img-fluid" alt="" style="height: 200px; object-fit: cover;">
+                    <div class="card-body"  style="background: #ffe600b7;">
+                        <span class="badge bg-danger">-46%</span>
+                        <h5 class="card-title">Adidas Racer Tr23 - Tenis para hombre</h5>
+                        <p class="card-text">COP 52.128</p>
+                        <button class="btn btn-primary btn-sm add-to-cart">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="{{ url_for('static', filename='img/nike2.jpg') }}" class="card-img-top img-fluid" alt="" style="height: 200px; object-fit: cover;">
+                    <div class="card-body"  style="background: #ffe600b7;">
+                        <span class="badge bg-danger">-74%</span>
+                        <h5 class="card-title">Adidas, Ultraboost Light Mujer</h5>
+                        <p class="card-text">COP 55.103</p>
+                        <button class="btn btn-primary btn-sm add-to-cart">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="{{ url_for('static', filename='img/nike4.jpg') }}" class="card-img-top img-fluid" alt="" style="height: 200px; object-fit: cover;">
+                    <div class="card-body"  style="background: #ffe600b7;">
+                        <span class="badge bg-danger">-74%</span>
+                        <h5 class="card-title">adidas Swift Run para hombre</h5>
+                        <p class="card-text">COP 55.103</p>
+                        <button class="btn btn-primary btn-sm add-to-cart">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

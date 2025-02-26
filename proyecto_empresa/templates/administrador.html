@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Panel de Administrador - JhorStep{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-center">Panel de Administrador</h2>
+    
+    <table class="table table-bordered table-hover mt-4">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Usuario</th>
+                <th>Email</th>
+                <th>Rol</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for usuario in usuarios %}
+            <tr>
+                <td>{{ usuario.id }}</td>
+                <td>{{ usuario.nombre }}</td>
+                <td>{{ usuario.username }}</td>
+                <td>{{ usuario.email }}</td>
+                <td>
+                    {% if usuario.es_admin %}
+                        <span class="badge bg-danger">Administrador</span>
+                    {% else %}
+                        <span class="badge bg-primary">Usuario</span>
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

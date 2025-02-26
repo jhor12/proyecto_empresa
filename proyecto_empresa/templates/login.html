@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Iniciar Sesión - JhorStep{% endblock %}
+
+{% block content %}
+
+<div class="text-center mb-4">
+        <a href="{{ url_for('inicio') }}">
+            <img src="{{ url_for('static', filename='img/logo1.webp') }}" alt="Logo" width="64" height="64">
+        </a>
+    </div>
+
+<form method="POST" class="p-4 border rounded bg-white mx-auto" style="max-width: 400px;">
+    <div class="mb-3">
+        <label for="email" class="form-label">Correo Electrónico</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+    </div>
+    <button type="submit" class="btn btn-warning w-100">Iniciar Sesión</button>
+</form>
+
+<div class="text-center mt-3">
+    <p class="text-dark">¿No tienes una cuenta? <a href="{{ url_for('registro') }}" class="text-warning">Regístrate aquí</a></p>
+    <p class="text-dark">Olvide mi contraseña <a href="{{ url_for('recuperacion') }}" class="text-warning">Recuperar aqui</a></p>
+</div>
+
+{% endblock %}

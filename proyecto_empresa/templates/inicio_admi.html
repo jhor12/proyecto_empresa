@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block title %}Inicio Admi - JhorStep{% endblock %}
+
+{% block content %}
+    <h1 class="text-center text-dark">Bienvenido a JhorStep</h1>
+    <p class="text-center">Explora nuestros productos.</p>
+
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-md-2 g-4" id="product-container">
+            
+            <!-- Tarjeta 1: Categorías -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img  src="{{ url_for('static', filename='img/categorias.jpg') }}" 
+                         class="img-fluid" 
+                         style="height: 300px; object-fit: cover;" 
+                         alt="Categorías">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-bold">Categorías</h5>
+                        <p class="card-text text-muted">Información de cada categoría de nuestros productos</p>
+                        <a href="{{ url_for('categoria') }}" class="btn btn-outline-primary rounded-pill mt-auto">Gestión de categorías</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Tarjeta 2: Empleados -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="{{ url_for('static', filename='img/empleados.jpg') }}" 
+                         class="img-fluid" 
+                         style="height: 300px; object-fit: cover;" 
+                         alt="Empleados">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-bold">Empleados</h5>
+                        <p class="card-text text-muted">Información de cada empleado de la tienda</p>
+                        <a href="{{ url_for('inicio') }}" class="btn btn-outline-primary rounded-pill mt-auto">Gestión de Empleados</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3: clientes -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="{{ url_for('static', filename='img/clientes.jpg') }}" 
+                         class="img-fluid" 
+                         style="height: 300px; object-fit: cover;" 
+                         alt="clientes">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-bold">Clientes</h5>
+                        <p class="card-text text-muted">Información de los empleados de la tienda</p>
+                        <a href="{{ url_for('inicio') }}" class="btn btn-outline-primary rounded-pill mt-auto">Gestión de Clientes</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 4: linea producto -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="{{ url_for('static', filename='img/linea.jpg') }}" 
+                         class="img-fluid" 
+                         style="height: 300px; object-fit: cover;" 
+                         alt="linea">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-bold">linea de productos</h5>
+                        <p class="card-text text-muted">Información de la linea de productos de la tienda</p>
+                        <a href="{{ url_for('inicio') }}" class="btn btn-outline-primary rounded-pill mt-auto">Gestión de Linea de Productos</a>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+{% endblock %}

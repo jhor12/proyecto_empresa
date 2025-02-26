@@ -1,0 +1,31 @@
+
+
+{% extends "base.html" %}
+
+{% block title %}recuperar Cuenta - JhorStep{% endblock %}
+
+{% block content %}
+
+<div class="text-center mb-4">
+    <a href="{{ url_for('inicio') }}">
+        <img src="{{ url_for('static', filename='img/logo1.webp') }}" alt="Logo" width="64" height="64">
+    </a>
+</div>
+
+<h1 class="text-center text-dark">Olvidé mi contraseña</h1>
+<p class="text-center">Ingresa tu dirección de email o telefono a continuación y te enviaremos<br> un código de 6 dígitos para el restablecimiento de tu contraseña.
+</p>
+
+<form id="loginForm" class="p-4 border rounded bg-white mx-auto" style="max-width: 400px;">
+    <div class="mb-3">
+        <label for="email" class="form-label">Correo Electrónico o numero de telefono</label>
+        <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico o telefono" required>
+    </div>
+    <button type="submit" class="btn btn-warning w-100">Enviar codigo</button>
+</form>
+
+<div class="text-center mt-3">
+    <p class="text-dark">¿Ya tienes cuenta? <a href="{{ url_for('login') }}" class="text-warning">Inicia sesión aquí</a></p>
+    <p class="text-dark">¿No tienes una cuenta? <a href="{{ url_for('registro') }}" class="text-warning">Regístrate aquí</a></p>
+</div>
+{% endblock %}

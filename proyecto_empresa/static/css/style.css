@@ -1,0 +1,31 @@
+/* Cambiar tipo de letra */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Efecto de hover en el menú */
+.navbar-nav .nav-link {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    transform: scale(1.1);
+    color: #ffd700 !important; /* Color dorado en hover */
+}
+
+/* Estilo para el menú activo */
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    border-bottom: 3px solid #ffd700; /* Línea dorada abajo */
+    color: #ffffff !important;
+}
+
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+

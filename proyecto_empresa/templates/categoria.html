@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block title %}Categorias - JhorStep{% endblock %}
+
+{% block content %}
+    <h1 class="text-center text-dark">Bienvenido a JhorStep</h1>
+    <p class="text-center">Explora nuestras marcas de productos.</p>
+
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4" id="product-container">
+            
+            <!-- Tarjeta 1: Categorías -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img  src="{{ url_for('static', filename='img/nike.webp') }}" 
+                         class="img-fluid" 
+                         style="height: 300px; object-fit: cover;" 
+                         alt="Categorías">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-bold">Nike</h5>
+                        <p class="card-text text-muted">Explora todos nuestros productos marca nike</p>
+                        <a href="{{ url_for('nike_admi') }}" class="btn btn-outline-primary rounded-pill mt-auto">Marca NIKE</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Tarjeta 2: Empleados -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="{{ url_for('static', filename='img/adidas.webp') }}" 
+                         class="img-fluid" 
+                         style="height: 300px; object-fit: cover;" 
+                         alt="Empleados">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-bold">Adidas</h5>
+                        <p class="card-text text-muted">Explora todos nuestros productos marca Adidas</p>
+                        <a href="{{ url_for('inicio') }}" class="btn btn-outline-primary rounded-pill mt-auto">Marca ADIDAS</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3: clientes -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="{{ url_for('static', filename='img/puma.webp') }}" 
+                         class="img-fluid" 
+                         style="height: 300px; object-fit: cover;" 
+                         alt="clientes">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-bold">Puma</h5>
+                        <p class="card-text text-muted">Explora todos nuestros productos marca Puma</p>
+                        <a href="{{ url_for('inicio') }}" class="btn btn-outline-primary rounded-pill mt-auto">Marca PUMA</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 4: linea producto -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="{{ url_for('static', filename='img/reebok.webp') }}" 
+                         class="img-fluid" 
+                         style="height: 300px; object-fit: cover;" 
+                         alt="linea">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-bold">Reebok</h5>
+                        <p class="card-text text-muted">Explora todos nuestros productos marca Reebok</p>
+                        <a href="{{ url_for('inicio') }}" class="btn btn-outline-primary rounded-pill mt-auto">Marca REEBOK</a>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Tarjeta 4: linea producto -->
+             <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="{{ url_for('static', filename='img/Vans.webp') }}" 
+                         class="img-fluid" 
+                         style="height: 300px; object-fit: cover;" 
+                         alt="linea">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-bold">Vans</h5>
+                        <p class="card-text text-muted">Explora todos nuestros productos marca Vans</p>
+                        <a href="{{ url_for('inicio') }}" class="btn btn-outline-primary rounded-pill mt-auto">Marca VANS</a>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+        
+{% endblock %}

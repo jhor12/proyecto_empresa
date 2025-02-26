@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block title %}Nike - JhorStep{% endblock %}
+
+{% block content %}
+    <style>
+        body {
+            background: #f8f9fa;
+        }
+        .section {
+            background: #e3e6ea;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 20px 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .blue-bar {
+            background: #87CEFA;
+            height: 5px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .table-container {
+            background: #dce1e6;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .table th, .table td {
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="container mt-4">
+
+    <!-- Categoría -->
+    <div class="section">
+        <h2>Categoría: Nike</h2>
+        <p>Bienvenido a productos marca nike</p>
+    </div>
+
+    <!-- Productos -->
+    <div class="section">Productos</div>
+    <div class="blue-bar"></div>
+
+    <div class="table-container">
+        <h5>Productos</h5>
+        <button class="btn btn-dark mb-3">➕ Añadir Producto</button>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Referencia</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <p></p>
+    </div>
+
+    <!-- Empleados -->
+    <div class="section">Empleados</div>
+    <div class="blue-bar"></div>
+
+    <!-- Clientes -->
+    <div class="section">Clientes</div>
+    <div class="blue-bar"></div>
+
+{% endblock %}
