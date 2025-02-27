@@ -34,7 +34,7 @@
                     <div class="card-body d-flex flex-column text-center">
                         <h5 class="card-title fw-bold">Empleados</h5>
                         <p class="card-text text-muted">Información de cada empleado de la tienda</p>
-                        <a href="{{ url_for('inicio') }}" class="btn btn-outline-primary rounded-pill mt-auto">Gestión de Empleados</a>
+                        <a href="{{ url_for('empleados') }}" class="btn btn-outline-primary rounded-pill mt-auto">Gestión de Empleados</a>
                     </div>
                 </div>
             </div>
@@ -48,8 +48,8 @@
                          alt="clientes">
                     <div class="card-body d-flex flex-column text-center">
                         <h5 class="card-title fw-bold">Clientes</h5>
-                        <p class="card-text text-muted">Información de los empleados de la tienda</p>
-                        <a href="{{ url_for('inicio') }}" class="btn btn-outline-primary rounded-pill mt-auto">Gestión de Clientes</a>
+                        <p class="card-text text-muted">Información de los Clientes de la tienda</p>
+                        <a href="{{ url_for('clientes') }}" class="btn btn-outline-primary rounded-pill mt-auto">Gestión de Clientes</a>
                     </div>
                 </div>
             </div>
@@ -65,6 +65,21 @@
                         <h5 class="card-title fw-bold">linea de productos</h5>
                         <p class="card-text text-muted">Información de la linea de productos de la tienda</p>
                         <a href="{{ url_for('inicio') }}" class="btn btn-outline-primary rounded-pill mt-auto">Gestión de Linea de Productos</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 5: sucursales -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="{{ url_for('static', filename='img/sucursales.jpg') }}" 
+                         class="img-fluid" 
+                         style="height: 300px; object-fit: cover;" 
+                         alt="linea">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-bold">Sucursales</h5>
+                        <p class="card-text text-muted">Informaciónsobre nuestras sucursales</p>
+                        <a href="{{ url_for('sucursales') }}" class="btn btn-outline-primary rounded-pill mt-auto">Gestión de Sucursales</a>
                     </div>
                 </div>
             </div>

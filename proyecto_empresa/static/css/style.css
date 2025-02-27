@@ -29,3 +29,29 @@ body {
 }
 
 
+/*empleados.html*/
+.section {
+    background: #e3e6ea;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.blue-bar {
+    background: #87CEFA;
+    height: 5px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.table-container {
+    background: #dce1e6;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.table th, .table td {
+    text-align: center;
+}
+

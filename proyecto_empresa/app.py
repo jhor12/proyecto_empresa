@@ -133,13 +133,26 @@ def inject_user():
 
 
 # Rutas de otras páginas
+
+@app.route("/empleados")
+def empleados():
+    return render_template("empleados.html")
+
+@app.route("/clientes")
+def clientes():
+    return render_template("clientes.html")
+
+@app.route("/sucursales")
+def sucursales():
+    return render_template("sucursales.html")
+
 @app.route("/adidas")
 def adidas():
     return render_template("adidas.html")
 
 @app.route("/nike_admi")
 def nike_admi():
-    return render_template("recuperacion.html")
+    return render_template("nike_admi.html")
 
 @app.route("/recuperacion")
 def recuperacion():
